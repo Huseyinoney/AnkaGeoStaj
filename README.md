@@ -1,2 +1,2 @@
 # AnkaGeoStaj
-#Staj süresince yapılan kodlama alıştırmaları ve projeler
+# Staj süresince yapılan kodlama alıştırmaları ve projeler

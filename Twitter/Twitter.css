@@ -52,14 +52,13 @@ hr {
 }
 .topTextContainer {
     width: 80%;
-    height: auto;
+    height: max-content;
     margin-top: 10%;
 }
 .topTextContainer2{
     width:auto;
-    height: auto;
     margin-top: 5%;
-  
+    height: max-content;
 }
 .topText {
     font-size:65px;
@@ -104,12 +103,12 @@ hr {
     width: 100%;
     display: flex;
     height: 8%;
-    background-color: aliceblue;
+    background-color:black;
     position: absolute;
     justify-content: space-evenly;
-    overflow: hidden;
+    flex-wrap: wrap;
 }
-.footerContainer a{
+.footerContainer a,div h4{
     color: #71767B;
     text-decoration: none;
     height: fit-content;
@@ -169,20 +168,17 @@ hr {
         display: flex;
         background-color: rgb(0, 0, 0);
         position: relative;
-        justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     .topTextContainer {
         width: 100%;
-        height: auto;
     }
     .topTextContainer2{
         margin-bottom:20px;
         margin-top:3%;
         padding-top: 4%;
         width:50%;
-        height: auto;
-        position: relative;
     }
     .servicePrivacyTextContainer {
         width: 250px;

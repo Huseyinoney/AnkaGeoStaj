@@ -1,0 +1,269 @@
+* {
+    padding: 0;
+    margin: 0;
+    border:0;
+}
+
+hr {
+    width: 93%;
+    color:lightgrey;
+    margin-top: 10%;
+    border: 1px;
+    border-style: solid;
+}
+
+
+.container {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+
+}
+
+.topContainer {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 242, 245);
+    position: relative;
+}
+
+.innerContainer {
+    width: 70%;
+    height: 60%;
+    position: relative;
+    background-color: rgb(240, 242, 245);
+    left: 15%;
+    top: 20%;
+    bottom: 20%;
+}
+
+.leftContainer {
+    width: 45%;
+    height: 65%;
+    background-color: rgb(240, 242, 245);
+    float: left;
+    margin-top: 1%;
+}
+
+.facebookText {
+    color: #373737;
+    font-size: 24px;
+    margin-top: 5%;
+    width: auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.facebookIconContainer {
+    width: 70%;
+    height: auto;
+    position: relative;
+    top: 15%;
+
+
+}
+
+.rightContainer {
+    display: flex;
+    width: 35%;
+    height: 80%;
+    background-color: white;
+    position: relative;
+    left: 15%;
+    border-radius: 2.5%;
+    top: 25%;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5%;
+}
+
+.inputEMailContainer {
+    display: flex;
+    padding: 4%;
+    position: relative;
+    width: 90%;
+    height: 15%;
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 5%;
+    border-color: lightgray;
+    border-radius: 5px;
+}
+
+.inputPasswordContainer {
+    display: flex;
+    padding: 4%;
+    position: relative;
+    width: 90%;
+    height: 15%;
+    background-color: white;
+    border-style: solid;
+    margin-bottom: 5%;
+    border-color: lightgray;
+    border-radius: 5px;
+    border-width: 1px;
+
+}
+
+.inputEmail {
+    width: 90%;
+    border: 0;
+    outline:none;
+
+}
+
+.inputPassword {
+    width: 90%;
+    border: 0;
+    outline:none;
+
+
+}
+
+.enterBtnContainer {
+
+    display: flex;
+    margin-top: 1%;
+    position: relative;
+    width: 99%;
+    height: 20%;
+    background-color: #1877f2;
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+
+.enterBtn {
+    padding: 3%;
+    width: 99%;
+    height: 20%;
+    background-color: #1877f2;
+    color: white;
+    font-size: 24px;
+    border: 0;
+    border-radius: 5px;
+}
+
+.passwordForgotBtn {
+    background-color: white;
+    color: #1877f2;
+    border: 0;
+    margin-top: 3%;
+}
+
+.createNewAccountBtn {
+    padding: 4%;
+    margin-top: 5%;
+    position: relative;
+    width: 50%;
+    height: 20%;
+    background-color: #42b72a;
+    border-style: solid;
+    margin-bottom: 5%;
+    border-radius: 5px;
+    border: 0;
+    color: white;
+    font-size: medium;
+}
+
+.pageCreateTextContainer {
+    width: 40%;
+    height: auto;
+    margin-left: 60%;
+}
+
+.pageCreateText {
+    font-size: 90%;
+    padding-left: 5%;
+    font-weight: 300;
+}
+
+.pageCreateText>a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer {
+    width: 100%;
+    height: 20%;
+    position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .leftContainer {
+
+        width: 80%;
+        height: 40%;
+        background-color: rgb(240, 242, 245);
+        margin-top: 5%;
+        float: none;
+        left: 20%;
+    }
+
+    .innerContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        height: 60%;
+        position: relative;
+        background-color: rgb(240, 242, 245);
+        left: 15%;
+        top: 1%;
+    }
+
+    .rightContainer {
+        display: flex;
+        width: 110%;
+        height: 94%;
+        background-color: white;
+        position: relative;
+        left: -14%;
+        border-radius: 2%;
+        flex-direction: column;
+        align-items: center;
+        padding: 4%;
+        top:20%;
+    }
+
+    .facebookIconContainer {
+        width: 100%;
+        position: relative;
+        top: 1%;
+        left: -5%;
+    }
+
+    .pageCreateTextContainer {
+        padding: 0%;
+        margin: 0%;
+        width: 100%;
+        height: 10%;
+        position: relative;
+        top: 25%;
+
+    }
+    .pageCreateText {
+        height: auto;
+        font-size:100%;
+        font-weight: 300;
+        padding: 0%;
+        margin: 0%;
+        margin-left:-3%;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+    .facebookText {
+        color:#373737;
+        font-size: 24px;
+        font-weight: normal;
+        padding: 0;
+        margin:0;
+    }
+    .footer {
+        width: 100%;
+        height: 30%;
+        position: relative;
+    }
+
+}

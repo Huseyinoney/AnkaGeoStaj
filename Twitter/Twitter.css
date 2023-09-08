@@ -25,15 +25,17 @@ hr {
     display: flex;
     width: 100%;
     height: 100%;
-    background-color: aqua;
+    background-color: black;
     
 }
 .leftContainer {
     display: flex;
     width: 40%;
-    height: 100%;
-    background-color:rgb(0, 255, 30);
+    height: auto;
+    background-color: black;
     position: relative;
+    align-items: center;
+    justify-content: center;
 }
 .rightContainer {
     position: relative;
@@ -113,6 +115,17 @@ hr {
     height: fit-content;
     
 }
+#createAccountBtn {
+    background-color: rgb(29, 155, 240);
+    color: white;
+    font-size:13px;
+
+}
+#entryButton {
+    background-color: black;
+    color:rgb(29, 155, 240);
+    border: 1px solid rgb(83, 100, 113);
+}
 
 @media screen and (max-width: 768px) {
 
@@ -130,10 +143,13 @@ hr {
         
     }
     .leftContainer {
+        padding-top: 15%;
+        padding-left:15%;
         display: flex;
+      justify-content:  flex-start;
         width: 100%;
-        height: 10%;
-        background-color: rgb(255, 255, 255);
+        height:auto;
+        background-color: black;
         position: relative;
     }
     .rightContainer {
@@ -157,7 +173,7 @@ hr {
         align-items: flex-start;
     }
     .topTextContainer {
-        width: 80%;
+        width: 100%;
         height: auto;
     }
     .topTextContainer2{

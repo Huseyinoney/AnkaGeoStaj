@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+.mainContainer {
+    min-width: 100%;
+    min-height: 100%;
+    background-color: black;
+}
+
+.leftNavBarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightNavBarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#SignIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 30px;
+    color: #efeff1;
+    background-color: #53535F61;
+    border: none;
+}
+
+#SignUp {
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    height: 30px;
+    color: #efeff1;
+    background-color: #9147ff;
+    border: none;
+}
+
+.navBarSearchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+#searchInputContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#s1 {
+    width: 20rem;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.navBarContainer {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    min-width: 100%;
+    height: 3rem;
+    background-color: #1f1f23;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.NavBarElement {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 7px;
+    border: 1px white solid;
+}
+
+#newPrime {
+    width: 2rem;
+    height: 3rem;
+}
+
+.innerContainer {
+    display: flex;
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+.leftContentContainer {
+    top: 3rem;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    min-height: 100%;
+    background-color: #1f1f23;
+}
+
+.rightContentContainer {
+    width: 100%;
+}
+
+.topContentContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    height: 25rem;
+    padding: 0 4rem 0 4rem;
+}
+
+.videoContainer {
+    min-width: 100%;
+    height: 20rem;
+}
+
+.streamsContainer {
+    padding: 1.5rem 1.5rem 1.5rem 4.5em;
+    display: flex;
+    min-width: 100%;
+    background-color: red;
+    min-height: 20rem;
+    flex-wrap: wrap;
+}
+
+.streamItem {
+    max-width: 25%;
+    min-width: 25%;
+    height: 14rem;
+    border: 1px white solid;
+    background-color: bisque;
+}
+
+
+@media screen and (max-width: 980px) {
+    #searchInputContainer {
+        display: none;
+    }
+
+    .rightNavBarContainer {
+        /* margin-left: -15%; */
+    }
+
+    .streamItem {
+        min-width: 50%;
+    }
+}

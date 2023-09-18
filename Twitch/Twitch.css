@@ -4,13 +4,23 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 10px;
+}
+
+body {
+    min-width: 100%;
+    min-height: 100%;
+    position: relative;
+}
+
 body::-webkit-scrollbar {
     display: none;
 }
+
 .mainContainer {
     min-width: 100%;
     min-height: 100%;
-    background-color: black;
 }
 
 .leftNavBarContainer {
@@ -31,23 +41,23 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80px;
+    width: 8rem;
     cursor: pointer;
     border-radius: 4px;
-    height: 30px;
+    height: 3rem;
     color: #efeff1;
     background-color: #53535F61;
     border: none;
 }
 
 #SignUp {
-    width: 70px;
+    width: 7rem;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
     border-radius: 4px;
-    height: 30px;
+    height: 3rem;
     color: #efeff1;
     background-color: #9147ff;
     border: none;
@@ -57,7 +67,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 50%;
+    width: 40%;
 }
 
 #searchInputContainer {
@@ -67,96 +77,172 @@ body::-webkit-scrollbar {
 }
 
 #s1 {
-    width: 20rem;
+    width: 25rem;
     padding: 6px;
     border-radius: 6px;
 }
 
 .navBarContainer {
+    top: 0;
     position: fixed;
     display: flex;
     flex-direction: row;
     min-width: 100%;
-    height: 3rem;
+    height: 5rem;
     background-color: #1f1f23;
     align-items: center;
     justify-content: space-between;
+    z-index: 2;
 }
 
 .NavBarElement {
-    width: 3rem;
-    height: 3rem;
-    margin-right: 7px;
+    width: 5rem;
+    height: 5rem;
     border: 1px white solid;
 }
 
-#newPrime {
+#newPrimeContainer {
     width: 2rem;
     height: 3rem;
 }
 
 .innerContainer {
+    position: relative;
     display: flex;
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
+    top: 5rem;
+
 }
 
 .leftContentContainer {
-    top: 3rem;
+    top: 5rem;
     position: fixed;
     display: flex;
     flex-direction: column;
-    width: 3rem;
+    width: 5rem;
     min-height: 100%;
     background-color: #1f1f23;
 }
 
 .rightContentContainer {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 5rem;
+
+
 }
 
 .topContentContainer {
+
     display: flex;
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    height: 25rem;
-    padding: 0 4rem 0 4rem;
+    min-height: 45rem;
 }
 
 .videoContainer {
     min-width: 100%;
-    height: 20rem;
+    height: 35rem;
 }
 
 .streamsContainer {
-    padding: 1.5rem 1.5rem 1.5rem 4.5em;
+    justify-content: center;
     display: flex;
     min-width: 100%;
-    background-color: red;
-    min-height: 20rem;
+    /* background-color: red; */
+    background-color: #0e0e10;
+    min-height: 100%;
     flex-wrap: wrap;
+    flex-grow: 1;
+
 }
 
 .streamItem {
-    max-width: 25%;
-    min-width: 25%;
-    height: 14rem;
-    border: 1px white solid;
+    min-width: 22%;
+    min-height: 24rem;
+    width: 18rem;
+    max-width: 40%;
+    /* max-height: 32%; */
     background-color: bisque;
+    margin-top: 1rem;
+    margin-right: 2rem;
+}
+
+.streamItemTop {
+    width: 100%;
+    max-height: 60%;
+    height: 60%;
+    border: 1px solid black;
+}
+
+.streamItemBottom {
+    width: 100%;
+    max-height: 40%;
+    height: 40%;
+    border: 1px solid black;
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 1024px) and (min-width:720px) {
+
+    /* #searchInputContainer {
+        display: none;
+    } */
+    .navBarSearchContainer {
+        width: 30rem;
+
+    }
+
+    #s1 {
+        width: 25rem;
+    }
+
+    .streamItem {
+
+        min-width: 45%;
+        min-height: 24rem;
+        max-width: 48%;
+
+    }
+}
+
+@media screen and (max-width:720px) {
+
     #searchInputContainer {
         display: none;
     }
 
-    .rightNavBarContainer {
-        /* margin-left: -15%; */
+    .navBarSearchContainer {
+        justify-content: flex-end;
+    }
+
+    .streamsContainer {
+        padding-right: 1rem;
     }
 
     .streamItem {
-        min-width: 50%;
+        min-width: 39%;
+        min-height: 20rem;
+
     }
+
+    .streamItemTop {
+        width: 100%;
+        max-height: 50%;
+        height: 50%;
+        border: 1px solid black;
+    }
+
+    .streamItemBottom {
+        width: 100%;
+        max-height: 50%;
+        height: 50%;
+        border: 1px solid black;
+    }
+
 }

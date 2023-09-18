@@ -3,29 +3,60 @@
     margin: 0%;
     box-sizing: border-box;
 }
+
 h2 {
     color: white;
     font-size: 15px;
 }
+.twitterSvg{
+    fill: white;
+    max-width: 65%;
+    max-height: 60%;
+    min-height: 5%;
+}
+
+.servicePrivacyText a {
+    color: #1d9bf0;
+    text-decoration: none;
+}
+.servicePrivacyText a:hover {
+    text-decoration-line: underline;
+}
 hr {
-    width:100px;
+    width:130px;
     margin-top:15px;
     margin-right: 5px;
+    
+}
+span {
+    color: white;
+    margin-top: 0.8rem;
+    margin-right: 5px;
+}
+
+.btnSvg {
+    height: 18px;
+    margin-right: 8px;
+    min-width: 18px;
+    width: 18px;
 }
 .hrContainer {
+    min-width:300px;
     display: flex;
+    align-items: center;
 }
 .mainContainer {
-    width:100%;
-    height:110%;
+   min-width:100vh;
+    min-height:100vh;
     background-color: black;
 }
 
 .topContainer {
     display: flex;
-    width: 100%;
+    min-width: 100%;
     height: 100%;
-    background-color: black;
+    background-color:black;
+ 
     
 }
 .leftContainer {
@@ -33,12 +64,11 @@ hr {
     width: 40%;
     height: auto;
     background-color: black;
-    position: relative;
     align-items: center;
     justify-content: center;
 }
 .rightContainer {
-    position: relative;
+ 
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -47,18 +77,19 @@ hr {
     background-color: black;
     padding: 5%;
     padding-left: 10%;
-    padding-top: 2;
+    padding-top: 5%;
    
 }
 .topTextContainer {
     width: 80%;
     height: max-content;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 .topTextContainer2{
     width:auto;
-    margin-top: 5%;
+    margin-top: 8%;
     height: max-content;
+    margin-bottom: 15px;
 }
 .topText {
     font-size:65px;
@@ -67,48 +98,50 @@ hr {
     font-size:30px;
 }
 .servicePrivacyText {
-    font-size:12px;
-    color: #71767B;;
+    font-size:11px;
+    color: #71767B;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
 }
 .servicePrivacyTextContainer {
-    width: 250px;
+    width: 300px;
 }
 .btnMainContainer {
-    position: relative;
     width: 100%;
     height: 50%;
     display: flex;
     flex-direction: column;
-    
 }
 
 .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 0;
     outline:none;
     border-radius: 45px;
     cursor: pointer;
     margin-top: 10px;
-    width: 250px;
+    width: 300px;
     padding: 12px;
-    position: relative;
-
+}
+#appleBtn {
+    font-weight: 700;
 }
 .accountTextContainer {
-    margin-top: 7%;
-    display: flex;
+    margin-top:3.9rem;
     
 }
 
 .footerContainer{
     width: 100%;
     display: flex;
-    height: 8%;
+    height: 5%;
     background-color:black;
-    position: absolute;
+    /* position: relative;  */
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.footerContainer a,div h4{
+.footerContainer a ,div h4{
     color: #71767B;
     text-decoration: none;
     height: fit-content;
@@ -118,7 +151,6 @@ hr {
     background-color: rgb(29, 155, 240);
     color: white;
     font-size:13px;
-
 }
 #entryButton {
     background-color: black;
@@ -129,50 +161,49 @@ hr {
 @media screen and (max-width: 768px) {
 
     .mainContainer {
-        width:100%;
-        height:100%;
+        min-width:100%;
+        min-height:100%;
         background-color: black;
     }
     .topContainer {
         display: flex;
         flex-direction: column;
-        width: 100%;
+        min-width: 100%;
         height: 100%;
-        position: relative;
+        
         
     }
     .leftContainer {
-        padding-top: 15%;
-        padding-left:15%;
+        padding-top: 5%;
+        padding-left:40%;
         display: flex;
       justify-content:  flex-start;
-        width: 100%;
+        min-width: 100%;
         height:auto;
         background-color: black;
-        position: relative;
+        
     }
     .rightContainer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        width: 100%;
+        min-width: 100%;
         height: 90%;
         background-color: rgb(0, 0, 0);
-        position: relative;
-        padding-left: 15%;
+        padding-left: 40%;
         padding-bottom: 5%;
         
     }
     .footerContainer{
-        width: 100%;
+        min-width: 100%;
         display: flex;
         background-color: rgb(0, 0, 0);
-        position: relative;
         align-items: flex-start;
+        justify-content: space-evenly;
         flex-wrap: wrap;
     }
     .topTextContainer {
-        width: 100%;
+        width: 80%;
     }
     .topTextContainer2{
         margin-bottom:20px;
@@ -190,5 +221,19 @@ hr {
         
     }
     
-   
+   svg {
+    height: 40px;
+    width: 40px;
+   }
+   .accountTextContainer {
+    margin-top:2rem;
+    margin-bottom: 1rem;
+}
+.leftContainer {
+    padding-left: 7%;
+}
+.rightContainer {
+    padding-left: 7%;
+    padding-top: 4%;
+}
 }

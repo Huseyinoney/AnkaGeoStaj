@@ -6,12 +6,23 @@
 
 html {
     font-size: 10px;
+    min-height: 100%;
 }
 
 body {
     min-width: 100%;
-    min-height: 100%;
-    position: relative;
+    /* min-height: 100dvh; */
+    background-color: #0e0e10;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.NavBarElement img {
+    width: 60%;
+    height: 60%;
 }
 
 body::-webkit-scrollbar {
@@ -20,14 +31,14 @@ body::-webkit-scrollbar {
 
 .mainContainer {
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100dvh;
+    background-color: #0e0e10;
 }
 
 .leftNavBarContainer {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
 }
 
 .rightNavBarContainer {
@@ -67,7 +78,7 @@ body::-webkit-scrollbar {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
+    width: 35%;
 }
 
 #searchInputContainer {
@@ -77,9 +88,11 @@ body::-webkit-scrollbar {
 }
 
 #s1 {
-    width: 25rem;
+    width: 35rem;
     padding: 6px;
     border-radius: 6px;
+    background-color: #1f1f23;
+    border: 2px solid gray;
 }
 
 .navBarContainer {
@@ -92,17 +105,37 @@ body::-webkit-scrollbar {
     background-color: #1f1f23;
     align-items: center;
     justify-content: space-between;
-    z-index: 2;
+    z-index: 2000;
 }
 
 .NavBarElement {
+    display: flex;
     width: 5rem;
     height: 5rem;
-    border: 1px white solid;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.NavBarElement h2 {
+    color: #efeff1;
+}
+
+#accountIcon {
+    width: 50px;
+    height: 50px;
+    background-color: #1f1f23;
+}
+
+.red {
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: red;
+    border-radius: 0.4rem;
 }
 
 #newPrimeContainer {
-    width: 2rem;
+    width: 3rem;
     height: 3rem;
 }
 
@@ -110,9 +143,9 @@ body::-webkit-scrollbar {
     position: relative;
     display: flex;
     min-width: 100%;
-    min-height: 100%;
+    min-height: 100dvh;
     top: 5rem;
-
+    background-color: #0e0e10;
 }
 
 .leftContentContainer {
@@ -120,20 +153,19 @@ body::-webkit-scrollbar {
     position: fixed;
     display: flex;
     flex-direction: column;
-    width: 5rem;
+    width: 24rem;
     min-height: 100%;
     background-color: #1f1f23;
 }
 
 .rightContentContainer {
-    min-width: 100%;
+    width: 84%;
     min-height: 100%;
     display: flex;
     flex-direction: column;
     position: relative;
-    left: 5rem;
-
-
+    left: 24rem;
+    padding: 0 1.5rem;
 }
 
 .topContentContainer {
@@ -142,60 +174,140 @@ body::-webkit-scrollbar {
     align-items: center;
     justify-content: center;
     min-width: 100%;
-    min-height: 45rem;
+    min-height: 35rem;
 }
 
 .videoContainer {
     min-width: 100%;
-    height: 35rem;
+    height: 30rem;
+}
+
+.topText {
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+}
+
+.topText a {
+    color: #bf94ff;
+    text-decoration: none;
 }
 
 .streamsContainer {
-    justify-content: center;
     display: flex;
     min-width: 100%;
-    /* background-color: red; */
     background-color: #0e0e10;
     min-height: 100%;
+    height: 100%;
     flex-wrap: wrap;
-    flex-grow: 1;
-
 }
 
 .streamItem {
-    min-width: 22%;
-    min-height: 24rem;
-    width: 18rem;
-    max-width: 40%;
+    height: 35%;
+    max-height: 37rem;
+    width: 30rem;
+    max-width: 50%;
     /* max-height: 32%; */
-    background-color: bisque;
+    margin: 0.5rem;
     margin-top: 1rem;
-    margin-right: 2rem;
 }
 
 .streamItemTop {
     width: 100%;
-    max-height: 60%;
-    height: 60%;
-    border: 1px solid black;
+    /* max-height: 65%; */
+    height: 65%;
+}
+
+.streamItemTop:hover {
+    transition: ease 0.15s;
+    border-bottom: 1rem solid #9147ff;
+    border-left: 1rem solid #9147ff;
+    transform: translate(1rem,-1rem);
 }
 
 .streamItemBottom {
     width: 100%;
-    max-height: 40%;
-    height: 40%;
-    border: 1px solid black;
+    max-height: 35%;
+    height: 35%;
+}
+
+.leftContent {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.leftContent h2 {
+    padding-top: 12px;
+    color: #efeff1;
+}
+
+.leftContentItem {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+}
+
+.leftContentItem h2 {
+    font-size: 18px;
+    color: #efeff1;
+}
+
+.leftContentItem h3 {
+    color: grey;
+    font-size: 15px;
+}
+
+.leftContentItem h1 {
+    font-size: 20px;
+    color: #efeff1;
+}
+
+.streamContentItem {
+    display: flex;
+    align-items: center;
+}
+
+.streamContentItem h2 {
+    font-size: 14px;
+    color: grey;
+}
+
+.streamContentItem h3 {
+    color: grey;
+    font-size: 12px;
+}
+
+.streamContentItem h1 {
+    margin-top: 1rem;
+    font-size: 18px;
+    color: #efeff1;
+}
+
+#s1:focus {
+    outline: 2px solid #9147ff;
 }
 
 
+@media screen and (max-width:1500px) and (min-width:1025px) {
+    .streamItem {
+        min-width: 30%;
+        min-height: 24rem;
+        width: 25rem;
+    }
+
+    /* .leftContentContainer{
+        width: 5rem;
+    }
+    .rightContentContainer{
+        left:5rem;
+        width: 96%;
+    } */
+}
+
 @media screen and (max-width: 1024px) and (min-width:720px) {
 
-    /* #searchInputContainer {
-        display: none;
-    } */
     .navBarSearchContainer {
         width: 30rem;
-
     }
 
     #s1 {
@@ -203,11 +315,27 @@ body::-webkit-scrollbar {
     }
 
     .streamItem {
-
-        min-width: 45%;
+        min-width: 48%;
         min-height: 24rem;
-        max-width: 48%;
+        max-width: 50%;
+    }
 
+    .leftContentContainer {
+        width: 5rem;
+    }
+
+    .rightContentContainer {
+        left: 5rem;
+        width: 96%;
+    }
+
+    .leftContent h2 {
+        display: none;
+    }
+
+    .leftContentItem h2,
+    h3 {
+        display: none;
     }
 }
 
@@ -222,27 +350,42 @@ body::-webkit-scrollbar {
     }
 
     .streamsContainer {
-        padding-right: 1rem;
+        padding-right: 2rem;
     }
 
     .streamItem {
-        min-width: 39%;
-        min-height: 20rem;
-
+        max-width: 45%;
+        min-height: 15rem;
+        max-height: 25rem;
     }
 
     .streamItemTop {
         width: 100%;
-        max-height: 50%;
-        height: 50%;
-        border: 1px solid black;
+        max-height: 55%;
+        height: 55%;
     }
 
     .streamItemBottom {
         width: 100%;
-        max-height: 50%;
-        height: 50%;
-        border: 1px solid black;
+        max-height: 45%;
+        height: 45%;
     }
 
+    .leftContentContainer {
+        width: 5rem;
+    }
+
+    .rightContentContainer {
+        left: 5rem;
+        width: 96%;
+    }
+
+    .leftContent h2 {
+        display: none;
+    }
+
+    .leftContentItem h2,
+    h3 {
+        display: none;
+    }
 }

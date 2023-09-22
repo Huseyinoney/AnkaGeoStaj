@@ -4,37 +4,46 @@
     box-sizing: border-box;
 }
 
-.todosContainer::-webkit-scrollbar {
+/* .todosContainer::-webkit-scrollbar {
     display: none;
-}
+} */
+
 body::-webkit-scrollbar {
     display: none;
+
 }
-html,body {
+
+html,
+body {
     font-size: 10px;
-    background-color:grey;
+    background-color: grey;
     height: 100%;
     /* min-height: 100%; */
 }
+
 .container {
     min-height: 100%;
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center; 
+    /* align-items: center; */
+    justify-content: center;
 }
+
 #todoListText {
     font-size: 2.5rem;
     color: white;
 }
+
 .toDoCreateContainer {
     /* width: 100%; */
     display: flex;
     padding: 2rem;
     justify-content: center;
     align-items: center;
-   
+    background-color: darkgray;
+
 }
+
 .innerContainer {
     margin-top: 5rem;
     margin-bottom: 5rem;
@@ -48,37 +57,43 @@ html,body {
     flex-direction: column;
     /* justify-content: center; */
     background-color: rgb(37, 37, 37);
+    border-radius: 3rem;
 }
+
 #textInput {
     min-width: 30%;
     max-width: 50%;
     height: 5rem;
     outline: none;
-    border-radius: 0.5rem;
-    margin-right: 10%;
+    border-radius: 1rem;
+    margin-right: 5rem;
     border: none;
-    padding: 1rem;
     font-size: 1.5rem;
-    text-align: center;
+    padding-left: 2.5rem;
 }
+
 .btnContainer {
     display: flex;
 }
+
 .btn {
     width: 5rem;
     height: 5rem;
-    border-radius:10px;
+    border-radius: 10px;
     margin-right: 1rem;
     border: none;
-    color:white;
+    color: white;
     cursor: pointer;
 }
+
 .btn:active {
-    border:1px solid  rgb(37, 37, 37);
+    border: 1px solid darkgray;
 }
+
 #addBtn {
-    background-color:green;
+    background-color: green;
 }
+
 #clearBtn {
     background-color: red;
 }
@@ -86,11 +101,8 @@ html,body {
 #singleClearBtn {
     background-color: red;
 }
-#singleClearBtn:active {
-    border:1px solid darkgray;
-}
+
 .todosContainer {
-    /* overflow: auto; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -109,17 +121,25 @@ html,body {
     justify-content: space-between;
     margin-bottom: 1rem;
 }
+
 .paragrafDiv {
     max-width: 70%;
     word-wrap: break-word;
 }
+
 .paragrafDiv p {
     font-size: 3rem;
-    color:  rgb(37, 37, 37);
+    color: rgb(37, 37, 37);
 }
-@media screen and (max-width:720px){
+
+@media screen and (min-width:721px) and (max-width:1280px) {
     html {
         font-size: 9px;
     }
-    
+}
+
+@media screen and (max-width:720px) {
+    html {
+        font-size: 8px;
+    }
 }

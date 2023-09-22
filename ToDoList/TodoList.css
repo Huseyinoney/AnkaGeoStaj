@@ -18,14 +18,12 @@ body {
     font-size: 10px;
     background-color: grey;
     min-height: 100%;
-    /* min-height: 100%; */
 }
 
 .container {
     min-height: 100%;
     width: 100%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 }
 
@@ -35,13 +33,11 @@ body {
 }
 
 .toDoCreateContainer {
-    /* width: 100%; */
     display: flex;
     padding: 2rem;
     justify-content: center;
     align-items: center;
     background-color: darkgray;
-
 }
 
 .innerContainer {
@@ -52,10 +48,8 @@ body {
     max-width: 80%;
     min-height: 60rem;
     max-height: auto;
-    /* max-height: auto; */
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     background-color: rgb(37, 37, 37);
     border-radius: 3rem;
 }
@@ -120,6 +114,7 @@ body {
     align-items: center;
     justify-content: space-between;
     margin-top: 2rem;
+    border-radius: 1rem;
 }
 
 .paragrafDiv {
